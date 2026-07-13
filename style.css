@@ -14,7 +14,7 @@ body::before {
     position: fixed;
     inset: 0;
 
-    background-image: url('src/images/skyBackground.jpg');
+    background-image: url('src/images/morningSky2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -64,10 +64,8 @@ a:hover {
     font-style: normal;
     color: #ffffff;
     font-size: 70px;
-    /* font-size-adjust: 180%; */
     text-align: center;
     margin: 20px 0;
-    color: #ffffff;
     text-size-adjust: 180%;
     text-align: center;
     margin-top: 20px;
@@ -77,7 +75,7 @@ a:hover {
     font-family: "Mrs Saint Delafield", cursive;
     font-style: normal;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     margin: 20px 0;
@@ -89,7 +87,6 @@ a:hover {
     width: 70%;
     height: auto;
     border: 1px solid #ddd;
-    padding: 5px;
 /* 
     content: "";
   background-image: url("https://ia601706.us.archive.org/8/items/mbid-bbeded36-8d04-4b3b-8b8b-6fa2e4fec570/mbid-bbeded36-8d04-4b3b-8b8b-6fa2e4fec570-27549132408.jpg");
@@ -172,11 +169,18 @@ a:hover {
     font-size: 30px;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 
 @keyframes fadeInOpacity {
     0% {

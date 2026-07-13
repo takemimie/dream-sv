@@ -15,12 +15,12 @@ characterTemplate.innerHTML = `
         align-items: left;
         border-radius: 10px;
         margin: 40px 0px 40px 0px;
-        background: rgba(255,255,255,0.5); // or hsla(0, 0%, 100%, 0.5)
+        background: rgba(255,255,255,0.3); // or hsla(0, 0%, 100%, 0.5)
         border: 1px solid #ccc;
     }
 
     .character-name {
-        color: white;
+        color: rgb(119, 119, 119);
         font-size: 45px;
         text-align: left;
         margin-left: 40px;
@@ -47,10 +47,7 @@ characterTemplate.innerHTML = `
         height: auto;
         max-width: 100%;
         max-height: 100%;
-        border-radius: 5px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin-left: 40px;
     }
 
     .image-div  {
