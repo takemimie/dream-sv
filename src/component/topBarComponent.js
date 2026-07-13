@@ -2,15 +2,10 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
   <style>
-    nav {
-      height: 75px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color:  #0a0a23;
-    }
+
     .top-bar {
-      height: 75px;
+      height: 90px;
+      padding: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -28,7 +23,7 @@ headerTemplate.innerHTML = `
 
     .nav-item {
       font-weight: 700;
-      font-size: 30px;
+      font-size: 35px;
 
       margin: 0 25px;
       color: #ffffff;
@@ -38,12 +33,6 @@ headerTemplate.innerHTML = `
     a:hover {
       padding-bottom: 5px;
       box-shadow: inset 0 -2px 0 0 #fff;
-    }
-
-    .top-bar {
-      background-color: #0a0a23;
-      height: 40px;
-      padding: 10px;
     }
 
   </style>

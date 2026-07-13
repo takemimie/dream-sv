@@ -2,7 +2,6 @@ const galleryTemplate = document.createElement('template');
 
 galleryTemplate.innerHTML = `
   <style>
-    body {margin:25px;}
 
     .center {
       display: flex;
@@ -20,8 +19,7 @@ galleryTemplate.innerHTML = `
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       padding: 40px 40px 40px 40px;
-      margin: 10px 10px 10px 10px;
-
+      margin: 20px 20px 20px 20px;
     }
 
     div.container {
@@ -42,7 +40,7 @@ galleryTemplate.innerHTML = `
 
   </style>
   <body>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <div class="fade-in">
       <h1 class="title">Gallery</h1>
       <br>
@@ -67,8 +65,23 @@ galleryTemplate.innerHTML = `
             <p class="polaroid-caption">Dance in Castle Wildrose</p>
           </div>
         </div>
+
+        <div class="polaroid">
+          <img class="polaroid-image" src="./src/images/selfie.png">
+          <div class="container">
+            <p class="polaroid-caption">Cheers!</p>
+          </div>
+        </div>
+
+        <div class="polaroid">
+          <img class="polaroid-image" src="./src/images/HSM.jpeg">
+          <div class="container">
+            <p class="polaroid-caption">Can I have this Dance?</p>
+          </div>
+        </div>
       </div>
     </div>
+    <button class="scroll-to-top-button" onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">Top</button>
   </body>
 `;
 
