@@ -44,14 +44,14 @@ galleryTemplate.innerHTML = `
       <br>
       <div class="center">
         <div class="polaroid">
-          <img class="polaroid-image" src="/src/images/knight.jpg">
+          <img class="polaroid-image" src="src/images/knight.jpg">
           <div class="container">
             <p>Knight</p>
           </div>
         </div>
 
         <div class="polaroid">
-          <img class="polaroid-image" src="/src/images/mostroLoung.JPG">
+          <img class="polaroid-image" src="src/images/mostroLoung.JPG">
           <div class="container">
             <p>Mostro Lounge</p>
           </div>
