@@ -24,7 +24,6 @@ headerTemplate.innerHTML = `
     .nav-item {
       font-weight: 700;
       font-size: 35px;
-
       margin: 0 25px;
       color: #ffffff;
       text-decoration: none;

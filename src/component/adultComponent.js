@@ -60,23 +60,6 @@ adultTemplate.innerHTML = `
 
 
   </body>
-      <script>
-
-        function submitPassword(passwordInput) {
-            var passwordInput = document.getElementById("password");
-            var password = passwordInput.value;
-
-            // console.log('After encoded: ' + btoa("whereIsP4R"));
-
-            if (password === atob('d2hlcmVJc1A0Ug==')) {
-                var adult = document.getElementById("adult");
-                adult.style.display = 'none';
-                var hiddenAdult = document.getElementById("hidden-adult");
-                hiddenAdult.style.display = 'block';
-
-            }
-        }
-    </script>
 `;
 
 class Adult extends HTMLElement {
@@ -86,13 +69,6 @@ class Adult extends HTMLElement {
 
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: 'open' });
-
-    // //Inside element
-    //     var span = document.createElement( "span" )
-    //     span.textContent = "i'm inside the Shadow DOM"
-    //     span.id = "inside"
-    //     shadowRoot.appendChild( span )
-
 
     shadowRoot.appendChild(adultTemplate.content);
   }

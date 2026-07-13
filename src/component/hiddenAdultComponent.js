@@ -54,7 +54,6 @@ hiddenAdultTemplate.innerHTML = `
             <br>
         </div>
     </div>
-    <button class="scroll-to-top-button" onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">Top</button>
   </body>
 `;
 
@@ -64,7 +63,7 @@ class HiddenAdult extends HTMLElement {
     }
 
     connectedCallback() {
-        const shadowRoot = this.attachShadow({ mode: 'closed' });
+        const shadowRoot = this.attachShadow({ mode: 'open' });
 
         shadowRoot.appendChild(hiddenAdultTemplate.content);
     }

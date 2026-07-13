@@ -7,10 +7,11 @@ indexTemplate.innerHTML = `
     <div class="fade-in">
         <h1 class="title">The Dream where I met You</h1>
         <br>
-        <h2 class="sv-subtitle">Silver Vanrouge X Ikuyo Tsukinoki</h2>
         <h2 class="subtitle">個人夢向網站 by 凍檸茶</h2>
         <br>
         <img class="coverImage-box coverImage" src="src/images/coverImage.JPG">
+        <br>
+        <h2 class="sv-subtitle">Silver Vanrouge X Ikuyo Tsukinoki</h2>
 
         <br>
         <h2>此網站為本人在Twisted Wonderland的女監督生與Silver的個人夢向網站</h2>
@@ -37,7 +38,7 @@ class Index extends HTMLElement {
   }
 
   connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
+    const shadowRoot = this.attachShadow({ mode: 'open' });
 
     shadowRoot.appendChild(indexTemplate.content);
   }

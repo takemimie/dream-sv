@@ -21,7 +21,7 @@ characterTemplate.innerHTML = `
 
     .character-name {
         color: white;
-        font-size: 30px;
+        font-size: 45px;
         text-align: left;
         margin-left: 40px;
         margin-top: 20px;
@@ -78,6 +78,7 @@ characterTemplate.innerHTML = `
 
 
   </style>
+  <body>
     <link rel="stylesheet" href="style.css">
       <div class="fade-in">
       <h1 class="title">Characters</h1>
@@ -131,19 +132,20 @@ characterTemplate.innerHTML = `
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+</body>
 `;
 
 class Character extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
+    connectedCallback() {
+        const shadowRoot = this.attachShadow({ mode: 'open' });
 
-    shadowRoot.appendChild(characterTemplate.content);
-  }
+        shadowRoot.appendChild(characterTemplate.content);
+    }
 }
 
 customElements.define('character-component', Character);
