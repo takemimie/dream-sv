@@ -2,6 +2,7 @@ const characterTemplate = document.createElement('template');
 
 characterTemplate.innerHTML = `
   <style>
+    display: block;
     nav {
       height: 40px;
       display: flex;
@@ -85,6 +86,10 @@ characterTemplate.innerHTML = `
 
 
   </style>
+    <link rel="stylesheet" href="style.css">
+      <div class="fade-in">
+      <h1 class="title">Characters</h1>
+        <br>
         <div class="card-img-overlay">
             <h1 class="character-name"> Silver Vanrouge </h1>
             <div class="container-fluid">
@@ -131,6 +136,7 @@ characterTemplate.innerHTML = `
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 `;
 

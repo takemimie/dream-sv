@@ -38,18 +38,23 @@ galleryTemplate.innerHTML = `
 
   </style>
   <body>
-    <div class="center">
-      <div class="polaroid">
-        <img class="polaroid-image" src="/src/images/knight.jpg">
-        <div class="container">
-          <p>Knight</p>
+    <link rel="stylesheet" href="style.css">
+    <div class="fade-in">
+      <h1 class="title">Gallery</h1>
+      <br>
+      <div class="center">
+        <div class="polaroid">
+          <img class="polaroid-image" src="/src/images/knight.jpg">
+          <div class="container">
+            <p>Knight</p>
+          </div>
         </div>
-      </div>
 
-      <div class="polaroid">
-        <img class="polaroid-image" src="/src/images/mostroLoung.JPG">
-        <div class="container">
-          <p>Mostro Lounge</p>
+        <div class="polaroid">
+          <img class="polaroid-image" src="/src/images/mostroLoung.JPG">
+          <div class="container">
+            <p>Mostro Lounge</p>
+          </div>
         </div>
       </div>
     </div>

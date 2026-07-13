@@ -9,6 +9,13 @@ headerTemplate.innerHTML = `
       justify-content: center;
       background-color:  #0a0a23;
     }
+    .top-bar {
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:  #0a0a23;
+    }
 
     ul {
       padding: 0;
@@ -41,15 +48,14 @@ headerTemplate.innerHTML = `
 
   </style>
   <header>
-    <nav>
+    <div class="top-bar">
       <ul>
-        <li><a href="/index.html" class="nav-item">Home</a></li>
-        <li><a href="/pages/character.html" class="nav-item">Character</a></li>
-        <li><a href="/pages/gallery.html" class="nav-item">Gallery</a></li>
-        <li><a href="/pages/adultContent.html" class="nav-item">Adult</a></li>
-        <li><a href="/pages/sources.html" class="nav-item">Sources</a></li>
+        <li><a onclick="onClickHome()" class="nav-item">Home</a></li>
+        <li><a onclick="onClickCharacter()" class="nav-item">Character</a></li>
+        <li><a onclick="onClickGallery()" class="nav-item">Gallery</a></li>
+        <li><a onclick="onClickAdult()" class="nav-item">Adult</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
   <body>
   <br>
