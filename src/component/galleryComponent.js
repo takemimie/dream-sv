@@ -22,7 +22,7 @@ galleryTemplate.innerHTML = `
       margin: 20px 20px 20px 20px;
     }
 
-    div.container {
+    .container {
       text-align: center;
       padding: 10px 10px;
     }
@@ -33,7 +33,7 @@ galleryTemplate.innerHTML = `
     }
 
     .polaroid-caption {
-      font-family: cursive;
+      font-family: "Estonia", cursive;
       font-size: 40px;
       color: #000000;
     }
@@ -81,7 +81,6 @@ galleryTemplate.innerHTML = `
         </div>
       </div>
     </div>
-    <button class="scroll-to-top-button" onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">Top</button>
   </body>
 `;
 
