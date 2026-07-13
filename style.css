@@ -1,5 +1,4 @@
-body {
-    /* font-family: Arial, sans-serif; */
+/* body {
     background-image: url('src/images/skyBackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,6 +7,23 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+} */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url('src/images/skyBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    z-index: -1;
+}
+
+body {
+    margin: 0;
 }
 
 h2 {

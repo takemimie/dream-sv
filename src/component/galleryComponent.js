@@ -34,7 +34,7 @@ galleryTemplate.innerHTML = `
 
     .polaroid-caption {
       font-family: "Estonia", cursive;
-      font-size: 40px;
+      font-size: 55px;
       color: #000000;
     }
 

@@ -28,7 +28,8 @@ adultTemplate.innerHTML = `
       }
 
       .adult-button {
-        font-size: 40px;
+        font-family: "Georgia", serif;
+        font-size: 30px;
         background-color:rgb(101, 76, 175);
         color: white;
         padding: 10px 20px;
