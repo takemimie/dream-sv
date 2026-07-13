@@ -6,12 +6,12 @@ indexTemplate.innerHTML = `
       <link rel="stylesheet" href="style.css">
 
     <div class="fade-in">
-        <h1 class="title">The Dream where I met You</h1>
+        <h1 class="title stonia-regular">The Dream where I met You</h1>
          <br>
         <h2 class="subtitle">Silver Vanrouge X Ikuyo Tsukinoki</h2>
         <h2 class="subtitle">個人夢向網站 by 凍檸茶</h2>
         <br>
-        <img class="coverImage" src="src/images/coverImage.JPG">
+        <img class="coverImage-box coverImage" src="src/images/coverImage.JPG">
 
         <br>
         <h2>此網站為本人在Twisted Wonderland的女監督生與Silver的個人夢向網站</h2>

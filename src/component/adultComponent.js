@@ -1,0 +1,97 @@
+const adultTemplate = document.createElement('template');
+
+adultTemplate.innerHTML = `
+    <style>
+      .adult-box {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px 0;
+        padding: 20px 20px 20px 20px;
+        margin: 20px 20px 20px 20px;
+      }
+
+      .adult-text {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    
+      .adult-input {
+        font-size: 20px;
+        width: 80%;
+        padding: 10px 10px 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .adult-button {
+        background-color:rgb(101, 76, 175);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+    </style>
+  <header>
+    <link rel="stylesheet" href="style.css">
+
+    <div class="fade-in">
+
+    </div>
+  </header>
+  <body>
+    <div class="fade-in">
+        <h1 class="title">Adult</h1>
+        <div class="adult-box">
+            <br>
+            <label class="adult-text" for="password">Enter password for adult content:</label>
+            <input class="adult-input" type="text" id="password" name="password">
+            <br><br>
+            <input class="adult-button" id="password" onclick="submitPassword(document.getElementById('password'))" type="submit" value="Submit">
+            <br>
+        </div>
+    </div>
+
+
+  </body>
+      <script>
+
+        function submitPassword(passwordInput) {
+            var passwordInput = document.getElementById("password");
+            var password = passwordInput.value;
+
+            // console.log('After encoded: ' + btoa("whereIsP4R"));
+
+            if (password === atob('d2hlcmVJc1A0Ug==')) {
+                var adult = document.getElementById("adult");
+                adult.style.display = 'none';
+                var hiddenAdult = document.getElementById("hidden-adult");
+                hiddenAdult.style.display = 'block';
+
+            }
+        }
+    </script>
+`;
+
+class Adult extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+
+    // //Inside element
+    //     var span = document.createElement( "span" )
+    //     span.textContent = "i'm inside the Shadow DOM"
+    //     span.id = "inside"
+    //     shadowRoot.appendChild( span )
+
+
+    shadowRoot.appendChild(adultTemplate.content);
+  }
+}
+
+customElements.define('adult-component', Adult);

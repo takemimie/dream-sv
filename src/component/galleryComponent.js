@@ -16,10 +16,10 @@ galleryTemplate.innerHTML = `
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      width: 80%;
+      width: 75%;
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      padding: 10px 10px 10px 10px;
+      padding: 40px 40px 40px 40px;
       margin: 10px 10px 10px 10px;
 
     }
@@ -30,10 +30,14 @@ galleryTemplate.innerHTML = `
     }
 
     .polaroid-image {
-      width: 90%;
+      width: 100%;
       height: auto;
-      text-align: center;
-      padding: 10px 10px 10px 10px;
+    }
+
+    .polaroid-caption {
+      font-family: cursive;
+      font-size: 40px;
+      color: #000000;
     }
 
   </style>
@@ -44,16 +48,23 @@ galleryTemplate.innerHTML = `
       <br>
       <div class="center">
         <div class="polaroid">
-          <img class="polaroid-image" src="../images/knight.jpg">
+          <img class="polaroid-image" src="./src/images/lostMemory.PNG">
           <div class="container">
-            <p>Knight</p>
+            <p class="polaroid-caption">Paro: Lost Memory</p>
           </div>
         </div>
 
         <div class="polaroid">
-          <img class="polaroid-image" src="../images/mostroLoung.JPG">
+          <img class="polaroid-image" src="./src/images/nightmare.JPG">
           <div class="container">
-            <p>Mostro Lounge</p>
+            <p class="polaroid-caption">Nightmare Before Christmas</p>
+          </div>
+        </div>
+
+        <div class="polaroid">
+          <img class="polaroid-image" src="./src/images/ball.jpeg">
+          <div class="container">
+            <p class="polaroid-caption">Dance in Castle Wildrose</p>
           </div>
         </div>
       </div>

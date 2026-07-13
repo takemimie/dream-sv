@@ -44,7 +44,7 @@ characterTemplate.innerHTML = `
 
     .character-name {
         color: white;
-        font-size: 50px;
+        font-size: 30px;
         text-align: left;
         margin-left: 20px;
         margin-top: 20px;

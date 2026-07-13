@@ -32,12 +32,12 @@ p {
     text-align: center;
     font-size: 18px;
 }
-img {
+/* img {
     display: block;
     margin: 20px auto;
     width: 200px;
     border-radius: 10px;
-}
+} */
 a {
     display: block;
     text-align: center;
@@ -50,9 +50,12 @@ a:hover {
 }
 
 .title {
-    font-family: cursive;
+    /* font-family: cursive; */
+    font-family: "Estonia", cursive;
+  font-style: normal;
     color: #ffffff;
-    font-size-adjust: 180%;
+    font-size: 40px;
+    /* font-size-adjust: 180%; */
     font-weight: bold;
     text-align: center;
     margin: 20px 0;
@@ -63,10 +66,27 @@ a:hover {
     margin: 20px auto;
     width: 70%;
     height: auto;
-    border-radius: 10px;
     border: 1px solid #ddd;
     padding: 5px;
+/* 
+    content: "";
+  background-image: url("https://ia601706.us.archive.org/8/items/mbid-bbeded36-8d04-4b3b-8b8b-6fa2e4fec570/mbid-bbeded36-8d04-4b3b-8b8b-6fa2e4fec570-27549132408.jpg");
+  background-size: cover;
+  filter: blur(30px) saturate(5); */
 }
+
+.coverImage-box {
+    -moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0px 0px 55px #fff;
+}
+
+.estonia-regular {
+  font-family: "Estonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .grid {
     display: grid;
