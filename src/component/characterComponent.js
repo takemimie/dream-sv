@@ -95,7 +95,7 @@ characterTemplate.innerHTML = `
             <div class="container-fluid">
                 <div class="grid">
                     <div class="col-4">
-                        <img src="src/images/silverPortrait.png" alt="Image" class="portraitImage">
+                        <img src="./src/images/silverPortrait.png" alt="Image" class="portraitImage">
                     </div>
                     <div class="col-8">
                         <p class="descriptionText">
@@ -118,7 +118,7 @@ characterTemplate.innerHTML = `
             <div class="container-fluid">
                 <div class="grid">
                     <div class="col-4">
-                        <img src="src/images/ikuyoPortrait.png" alt="Image" class="portraitImage">
+                        <img src="./src/images/ikuyoPortrait.png" alt="Image" class="portraitImage">
                     </div>
                     <div class="col-8">
                         <p class="descriptionText">
