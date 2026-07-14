@@ -2,6 +2,12 @@ var adultVerified = false;
 var maxGalleryImage = 5;
 var imageIndex = 1;
 
+window.onload = onShow;
+
+function onShow() {
+    document.getElementById('countDownDays').innerHTML = Math.floor((Date.now() - Date.parse('2025-08-01')) / (1000 * 60 * 60 * 24));;
+}
+
 function onClickHome() {
     var index = document.getElementById("index");
     index.style.display = 'block';

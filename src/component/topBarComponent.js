@@ -7,9 +7,12 @@ headerTemplate.innerHTML = `
       height: 90px;
       padding: 10px;
       display: flex;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
       align-items: center;
       justify-content: center;
-      background-color:  #0a0a23;
+      background-color: rgba(50, 14, 61, 1);
     }
 
     ul {

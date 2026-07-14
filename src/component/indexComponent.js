@@ -9,10 +9,13 @@ indexTemplate.innerHTML = `
         <br>
         <h2 class="subtitle">個人夢向網站 by 凍檸茶</h2>
         <br>
-        <img class="coverImage-box coverImage" src="src/images/coverImage.JPG">
+        <img class="coverImage-box coverImage" src="src/images/danceChibi.PNG">
         <br>
         <h2 class="sv-subtitle">Silver Vanrouge x Ikuyo Tsukinoki</h2>
 
+        <br>
+        <h2>Starting from 01-08-2025</h2>
+        <h2 id="countDownDays"></h2>
         <br>
         <h2>此網站為本人在Twisted Wonderland的女監督生與Silver的個人夢向網站</h2>
         <h2>網站內所有圖片、角色、設定僅用於個人夢向創作</h2>

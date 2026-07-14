@@ -53,6 +53,7 @@ galleryTemplate.innerHTML = `
 
     .no-1 {
       transform: rotate(10deg);
+      margin-left: 100px;
       position: absolute;
     }
 
